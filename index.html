@@ -1,104 +1,118 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./filem/style.css">
+    <!-- Linking the custom stylesheet -->
+    <link rel="stylesheet" href="./static/style.css">
+    <!-- Adding Bootstrap CSS for styling -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <title>Hussein</title>
-    <link rel="icon" href="./filem/logo.jpg">
-
+    <title>Hussein Software</title>
+    <!-- Adding favicon -->
+    <link rel="icon" href="./static/mainlogo.png">
 </head>
 <body>
-    <nav class="navbar navbar-light bg-primary">
+    <div class="main-container">
+    <!-- Navbar section -->
+    <nav class="navbar navbar-light">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img src="./filem/logo.jpg" alt="" width="50" height="50" class="d-inline-block align-text-top">
-       
-          </a>
-          <a class="navbar-brand" href="#">Hussain
-          <button  id="ar" type="button">Ar</button>
-          <button  id="en"type="button">En</button></a>
+            <div>
+            <a class="navbar-brand" href="./index.html">
+                <img id="nav-img"  src="./static/mainlogo.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-top">
+            </a>
+          </div>
+            <div>
+            <a class="navbar-brand" href="./index.html>Hussein</a>
+            <a class="navbar-brand" href="./index.html">Home</a>
+          </div>
+            <div>
+            <!-- Language toggle button -->
+            <button id="toggle-lang" type="button">Ar</button>
+          </div>
         </div>
-     
-      </nav>
+    </nav>
 
-      <main>
+    <!-- main section -->
+    <main>
+          <!-- Main content with a carousel -->
+      <section class="carousel">
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="./filem/logo.jpg" class="d-block w-100" alt="...">
-
-                <!-- <div class="carousel-caption d-none d-md-block">
-                  <h5>First slide label</h5>
-                  <p>Some representative placeholder content for the first slide.</p>
-                </div> -->
-              </div>
-              <div class="carousel-item">
-                <img src="./filem/logo2.jpg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="./filem/logo.png" class="d-block w-100"  alt="...">
-              </div>
+                <div class="carousel-item active">
+                    <img src="./static/mainlogo.png" class="d-block w-100" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                    <img src="./static/logo2.jpg" class="d-block w-100" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                    <img src="./static/logo.png" class="d-block w-100" alt="Third slide">
+                </div>
             </div>
+            <!-- Carousel controls -->
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
             </button>
             <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
             </button>
+        </div>
+      </section>
+
+
+    <section class="cards">
+      <!-- Card for programming courses -->
+      <d1iv class="cardview" >
+          <img src="./static/mainlogo.png" class="card-img-top" alt="Programming">
+          <div class="card-body">
+              <h5 id="title1" class="card-title">Programming</h5>
+              <p id="parg1" id="parg" class="card-text">Now you can enjoy a unique experience to develop your professional skills through advanced courses.</p>
+              <a href="https://codershiyar.com/" class="btn btn-primary">Codershiyar</a>
           </div>
-
-      </main>
-      <header id="header"  >
-        <div id="card" class="card" style="width: 18rem;">
-            <img src="./filem/logo.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5  id="h51" class="card-title"> البرمحيات</h5>
-              <p  id="parg1" class="card-text"> يمكنك الان الاستفاد من تجربه فريد لتطوير خبراتك المهنيه الاستفاده من كورسات متطوره   </p>
-              <a href="https://codershiyar.com/" class="btn btn-primary"> codershiyar  </a>
-            </div>
+      </d1iv>
+      <!-- Card for data encryption -->
+      <div class="cardview" >
+          <img src="./static/logo2.jpg" class="card-img-top" alt="Data Encryption">
+          <div class="card-body">
+              <h5 id="title2" class="card-title">Data Encryption</h5>
+              <p id="parg2" class="card-text">Keep your data secure with our encryption website.</p>
+              <a href="./uncode.html" class="btn btn-primary">Script Code</a>
           </div>
-
-          <div id="card"  class="card" style="width: 18rem;">
-            <img src="./filem/logo2.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5  id="h52" class="card-title">تشفير المعلومات</h5>
-              <p id="parg2" class="card-text">حافظ علي سريه معلوماتك مع موقعنا الخاص بتشفير البيانات</p>
-              <a href="https://first-maker.github.io/uncode-data/index" class="btn btn-primary">Scrit code</a>
-            </div>
+      </div>
+      <!-- Card for coding editor -->
+      <div class="cardview" >
+          <img src="./static/logo.png" class="card-img-top" alt="Code Editor">
+          <div class="card-body">
+              <h5 id="title3" class="card-title">Code Editor</h5>
+              <p id="parg3" class="card-text">Write and test your code through our platform.</p>
+              <a href="https://Elhussin.github.io/edit-htme-code/index" class="btn btn-primary">Write Code</a>
           </div>
-
-          <div  id="card"  class="card" style="width: 18rem;">
-            <img src="./filem/logo.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5  id="h53" class="card-title">كتابه الاكواد</h5>
-              <p  id="parg3" class="card-text">>قم بكتابه اكوادك وتجربته من خلال موقعنا</p>
-              <a href="https://first-maker.github.io/edit-htme-code/index " class="btn btn-primary"> writen Code</a>
-            </div>
+      </div>
+      <!-- Card for online radio -->
+      <div class="cardview" >
+          <img src="./static/radio.jpg" class="card-img-top" alt="Radio">
+          <div class="card-body">
+              <h5 id="title4" class="card-title">Radio</h5>
+              <p id="parg4" class="card-text">Listen to your favorite radio stations easily.</p>
+              <a href="https://Elhussin.github.io/Online-Radio/index" class="btn btn-primary">Radio</a>
           </div>
+      </div>
+  </section>
 
-          <div id="card"  class="card" style="width: 18rem;">
-            <img src="./filem/radio.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5  id="h54" class="card-title">الراديو</h5>
-              <p  id="parg4"class="card-text">استمع الي محطات الراديو المفضله اليك بكل سهوله</p>
-              <a href="https://first-maker.github.io/Online-Radio/index" class="btn btn-primary">radio</a>
-            </div>
-          </div>
+    </main>
 
-      </header>
-
-
-      <footer>
-        <h3 id="h31"> الحسيني  للبرمجيات</h3>
-        <p id="parg5"> نحلم لتطوير شيء جديد يستفيد منه جميع العالم   </p>
+   
+    <!-- Footer section -->
+    <footer>
+        <h5 id="footer">El-Husseiny</h5>
+        <p id="footer-prag">I'm Dreaming TO developing something new that benefits the whole world.</p>
     </footer>
-    
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-<script src="./filem/java.js"></script>
+  </div>
+    <!-- Adding Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!-- Linking custom JavaScript -->
+    <script src="./static/script.js"></script>
 </body>
 </html>
