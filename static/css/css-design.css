@@ -1,0 +1,303 @@
+/* Reset body margins and paddings */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+/* Header styling with gradient background */
+header {
+    height: 100px;
+    background-image: linear-gradient(to right, rgb(39, 39, 39), rgb(87, 87, 87), rgb(204, 204, 204));
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    flex-direction: row;
+}
+
+
+/* Circular image styling in the header */
+#logo-img{
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+}
+
+/* Header links styling */
+header a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+
+/* .navigation list items */
+.nav li {
+    display: inline-block;
+    background-color: rgb(39, 59, 39);
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px;
+}
+
+/* Hover effect for .navigation links */
+.nav a:hover, .nav li:hover {
+    background-color: rgb(82, 110, 112);
+    border-radius:5px;
+    color: rgb(30, 30, 32);
+}
+
+/* Main section styling */
+main {
+    width: 100%;
+    height:100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row ;
+    border-top: 5px solid rgb(75, 74, 74);
+    animation-name: main-background;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+
+}
+
+/* Animation for the main background */
+@keyframes main-background {
+    0% {
+        background-color: rgba(147, 195, 204, 0.76);
+    }
+    25% {
+        background-color:rgba(80, 110, 116, 0.911);
+    }
+    50% {
+        background-color: rgba(30, 41, 43, 0.952);
+    }
+}
+
+/* Left aside section styling */
+#aside1 {
+    text-align: center;
+    width: 25%;
+    height: 100%;
+    margin: 10px;
+    background-color: rgba(87, 105, 104, 0.301);
+}
+
+/* Images inside aside1 */
+#aside1 img {
+    width: 90%;
+    height: 200px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    min-height: 500px;
+}
+
+/* Headings in aside1 */
+#aside1 h1 {
+    width: 100%;
+    padding-top: 3px;
+    color: white;
+    border-bottom: 2px solid rgb(75, 74, 74);
+}
+
+/* Right aside section with polygon clip-path */
+#aside2 {
+    width: 20%;
+    height: 100%;
+    min-height: 500px;
+    background-color: rgb(58, 65, 64);
+    clip-path: polygon(55% 0, 100% 0, 100% 100%, 81% 100%);
+    animation-name: aside2;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+/* Animation for aside2 */
+@keyframes aside2 {
+    0% {
+        background-color: rgb(143, 173, 143);
+    }
+    25% {
+        background-color: rgb(100, 122, 93);
+    }
+    75% {
+        background-color: rgba(25, 65, 55, 0.904);
+    }
+    100% {
+        background-color: rgba(57, 80, 67, 0.986);
+    }
+}
+
+/* Pre-formatted text box styling */
+#pre_1 {
+    background-color: rgb(84, 112, 103);
+    font-size: 20px;
+    color: white;
+    text-align: left;
+    padding: 15px;
+    margin: 15px;
+    width: 90%;
+    animation-name: tracking-in-contract-bck-top;
+    animation-duration: 7s;
+    animation-iteration-count: 2;
+    margin-left: 15px;
+    margin-bottom: 25px;
+}
+
+/* Animation for pre_1 */
+@keyframes tracking-in-contract-bck-top {
+    0% {
+        letter-spacing: 1em;
+        transform: translateZ(400px) translateY(-300px);
+        opacity: 0;
+    }
+    40% {
+        opacity: 0.6;
+    }
+    100% {
+        transform: translateZ(0) translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Article section styling */
+#artical_1 {
+    width: 90%;
+    min-height: 600px;
+    position: relative;
+}
+
+/* Centered box inside the article section */
+#box {
+    padding: 5px;
+    border-radius: 15px;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+/* Header in the box */
+#box-h1 {
+    border-bottom: 3px solid rgb(197, 31, 31);
+    padding: 5px 0px;
+}
+
+/* Paragraph text inside the box */
+#box-p {
+    font-family: 'Tajawal', sans-serif;
+    text-align: justify;
+    font-size: 20px;
+}
+
+/* Contact section styling */
+#contact_1 {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Images inside the contact section */
+#contact_1 img {
+    width: 50%;
+    max-width: 100px;
+    margin: 2px;
+    border: 2px solid rgb(138, 138, 138);
+    padding: 3px;
+    border-radius: 50%;
+}
+
+/* Hover effect for contact images */
+#contact_1 img:hover {
+    width: 55%;
+
+}
+
+/* Hidden element for print */
+#print1 {
+    display: none;
+}
+
+/* Print-specific styles */
+@media print {
+    aside {
+        display: none;
+    }
+    .nav {
+        display: none;
+    }
+    #print1 {
+        display: block;
+    }
+}
+
+/* Responsive design for screens between 802px and 940px */
+@media only screen and (max-width: 940px) and (min-width: 802px) {
+    #logobox {
+        width: 40%;
+    }
+    #artical_1 {
+        width: 65%;
+    }
+    aside {
+        width: 35%;
+    }
+}
+
+/* Responsive design for screens below 801px */
+@media only screen and (max-width: 801px) {
+    header, main {
+        flex-direction: column;
+        height: auto;
+    }
+    #logobox {
+        width: 100%;
+        text-align: center;
+    }
+    .nav{
+        width: 100%;
+        text-align: center;
+    }
+    .nav li {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+
+    }
+    
+    span a {
+        text-decoration: none;
+    }
+
+    #aside1 {
+        width: 100%;
+    }
+    #artical_1 {
+        width: 100%;
+        height: 230px;
+        background-color: gainsboro;
+    }
+}
+
+/* Responsive design for screens below 500px */
+@media only screen and (max-width: 500px) {
+    .nav li {
+        display:flex;
+        width: 100%;
+    }
+}
+
+/* Landscape mode adjustments for screens below 500px */
+@media only screen and (orientation: landscape) and (max-width: 500px) {
+    #logobox {
+        background-color: gold;
+    }
+}
