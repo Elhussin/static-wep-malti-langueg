@@ -16,8 +16,9 @@ const elements = {
 // Language content
 const content = {
     english: {
-        title1: "Programming",
-        parg1: "Now you can enjoy a unique experience to develop your professional skills through advanced courses.",
+        title1: "clock",
+        parg1: `checkk the current time and date in real-time, 
+                change the background color of the webpage, and customize the background of a specific section. It also adapts to different screen sizes. `,
         title2: "Data Encryption",
         parg2: "Keep your data secure with our encryption website.",
         title3: "Code Editor",
@@ -28,8 +29,8 @@ const content = {
         footerPrag: "I'm Dreaming TO developing something new that benefits the whole world.",
     },
     arabic: {
-        title1: "البرمجيات",
-        parg1: "استفد الآن من تجربة فريدة لتطوير مهاراتك المهنية، من خلال الاستفادة من كورسات متقدمة تعزز من خبراتك.",
+        title1: "الساعة ",
+        parg1: "تطبيق بسيط لمعرفة الوقت والتحكم في الوان الخلفية",
         title2: "تشفير البيانات",
         parg2: "حافظ على خصوصية معلوماتك باستخدام تقنيات التشفير المتقدمة من خلال موقعنا.",
         title3: "كتابة الأكواد",
