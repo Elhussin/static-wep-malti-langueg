@@ -27,7 +27,7 @@ header {
 }
 
 .nav img:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 .logoh1{
@@ -37,19 +37,6 @@ header {
     text-shadow: 5px 5px rgb(43, 46, 43);
     animation: fadeIn 5s infinite normal ease;
     margin: 10px;
-}
-
-@keyframes fadeIn {
-    0% {
-        letter-spacing: -0.5em;
-        opacity: 0;
-    }
-    40% {
-        opacity: 0.6;
-    }
-    100% {
-        opacity: 1;
-    }
 }
 
 #headerul {
@@ -102,28 +89,29 @@ header {
     background-color: rgb(149, 153, 152);
 }
 
-aside {
-    width: 20%;
-    float: left;
-    height: 1000px;
-    background-color: rgba(123, 230, 215, 0.945);
+.main{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 }
-
-iframe {
-    margin: 20px;
-    height: 300px;
-    width: 95%;
-}
-
 table {
     height: 200px;
     width: 100%;
-    background-color: rgba(18, 18, 221, 0.678);
 }
+
+aside {
+    width: 20%;
+    display: flex ;
+    flex-direction: column;
+    background-color: rgba(218, 218, 218, 0.945);
+}
+
+
 
 aside table {
     height: 100px;
-    background-color: lightsteelblue;
+    background-color: rgb(255, 255, 255);
 }
 
 #mainhome table {
@@ -132,7 +120,14 @@ aside table {
     float: left;
     height: 200px;
 }
+.mainvisian h1,.mainvisian p{
+    color: black;
+    text-align: left;
+    line-height: 2 ;
+    font-variant: all-petite-caps;
 
+
+}
 table thead {
     background-color: rgb(56, 133, 196);
     color: white;
@@ -147,121 +142,104 @@ table td {
 }
 
 table tbody {
-    background-color: gainsboro;
+    /* background-color: rgb(255, 255, 255); */
     color: rgb(112, 102, 107);
-    font-size: 30px;
     text-align: center;
     font-variant: all-petite-caps;
+    box-shadow: 0px 0px 3px 3px rgb(255, 255, 255);
 }
 
 table input {
-    border: 0px;
+    padding: 5px;
     width: 100%;
+    /* border: 2px solid rgb(146, 121, 121); */
+}
+table input:hover {
+    background-color: rgb(196, 225, 226);
+}
+table input:focus {
+    background-color: rgba(196, 225, 226, 0.356);
+    color: rgb(5, 5, 5);
 }
 
-#button2 {
-    float: left;
-    width: 50%;
-    background-color: rgb(182, 183, 245);
-    height: 30px;
-}
 
-#button2 a {
-    text-decoration: none;
-}
 
 #FOLWUS {
     width: 100%;
     align-content: center;
-    transform: translate(0%, 100%);
 }
 
 #FOLWUS img {
-    cursor: progress;
-    width: 50%;
+    cursor: pointer;
+    width: 50px;
     border-radius: 50%;
 }
 
-#FOLWUS img:hover {
-    width: 60%;
-    border: 2px solid red;
-}
 
-#FOLWUSa {
-    margin-top: 20px;
-    display: flex;
-}
-
-#FOLWUSa a {
-    text-decoration: none;
-    font-size: 15px;
-}
-
-#FOLWUSa h3 {
-    font-size: 10px;
-    color: white;
-}
-
-#aside-text {
-    background-color: rgb(246, 249, 250);
-    width: 97%;
-    color: rgb(202, 27, 27);
-    transition-property: height;
-    transition-duration: 5s;
-}
-
-#aside-text:focus {
-    width: 96%;
-    height: 120px;
-    background-color: rgb(241, 39, 39);
-    color: yellow;
-    font-size: 18px;
-    text-align: justify;
-}
-
-#asideform {
-    margin-top: 30px;
+textarea{
     width: 100%;
-    border: 2px groove gray;
+    height: 100px;
+    
 }
+
+
 
 #asideform h1 {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    width: 100%;
     color: rgb(24, 22, 22);
-    background-color: whitesmoke;
     line-height: 3;
     text-align: center;
 }
 
 #asideform h1:hover {
-    text-shadow: 15px 15px #93d1d9;
+    text-shadow: 1px 1px #93d1d9;
 }
 
-#asideform input {
-    float: right;
-    width: 60%;
+input {
+    width: 100%;
     transition-duration: 2s;
     border: 2px groove rgb(146, 121, 121);
-    height: 30px;
+    background-color: rgb(234, 235, 236);
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10px;
+    border-radius: 5px;
+    padding: 5px;
 }
 
-#asideform input:hover {
-    background-color: red;
-    color: yellow;
-}
 
-#asideform label {
-    color: white;
+
+label {
+    color: black;
     font-size: 20px;
     text-align: center;
     float: left;
     display: block;
     width: 35%;
-    background-color: rgb(182, 183, 245);
-    border: 2px groove rgb(146, 121, 121);
+    margin-top: 10px;
+    margin-right: 10px;
+    padding: 5px;
     height: 32px;
+}
+select{
+    width: 100%;
+    height: 32px;
+    border: 2px groove rgb(146, 121, 121);
+    background-color: rgb(234, 235, 236);
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+
+.asideformdiv {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 main {
@@ -271,14 +249,7 @@ main {
     float: right;
 }
 
-#mainhome {
-    background-color: #f0f0f0;
-}
 
-#mainvisian {
-    background: linear-gradient(45deg, rgb(22, 243, 70) 50%, rgb(136, 136, 196) 50%);
-    height: 1000px;
-}
 
 .maindiv {
     float: left;
@@ -296,48 +267,8 @@ main {
     filter: invert(10%);
 }
 
-.maindiv video {
-    width: 100%;
-    height: 200px;
-}
 
-.maindiv h1 {
-    color: white;
-    background: lightskyblue;
-    width: 100%;
-    text-align: center;
-    line-height: 2;
-    font-variant: all-petite-caps;
-    transition: 5s width 2s, height, 4s background-color;
-}
 
-.maindiv p {
-    height: 30px;
-    color: rgb(10, 54, 250);
-    width: 100%;
-    font-size: 20px;
-    font-weight: bold;
-    background-color: whitesmoke;
-    font-variant: unicase;
-    transition: 5s width 2s, height, 4s background-color;
-    opacity: 0.1;
-}
-
-.maindiv p:hover {
-    width: 100%;
-    margin: 5px;
-    font-size: 24px;
-    height: 100px;
-    text-align: center;
-    background-color: rgb(102, 83, 104);
-    color: rgb(243, 247, 3);
-    opacity: 1;
-}
-
-#mainfram {
-    height: 1000px;
-    background: linear-gradient(22deg, #bac0e3f0 50%, #989994 50%);
-}
 
 #box {
     width: 100%;
@@ -378,3 +309,35 @@ main {
 #mainhome table tbody tr td:hover input {
     cursor: pointer;
 }
+
+iframe{
+    width: 100%;
+    height: 500px;
+    margin-top: 20px;
+}
+
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+    
+  .main {
+    flex-direction: column;
+  }
+
+
+    aside {
+        width: 100%; /* Make aside take up full width on smaller screens */
+    }
+    main {
+        width: 100%; /* Make main take up full width on smaller screens */
+    }
+    iframe {
+        width: 100%; /* Make iframe take up full width on smaller screens */
+    }
+    table {
+        width: 100%; /* Make table take up full width on smaller screens */
+    }
+}
+
