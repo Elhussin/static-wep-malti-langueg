@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/icon.jpg">
+    <title>الاسلام علم وعمل</title>
+    <link
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+rel="stylesheet"
+/>
+<!-- Google Fonts -->
+<link
+href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+rel="stylesheet"
+/>
+<!-- MDB -->
+<link
+href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css"
+rel="stylesheet"
+/>
+<style>
+  body {
+    direction: rtl;
+    text-align: right;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+  }
+  main {
+    margin-top: 50px;
+    min-height:100vh;               }
+</style>
+</head>
+
+<body>
+    <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg  h-auto  navbar-light bg-info">
+    <div class="container-fluid">
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-mdb-toggle="collapse"
+    data-mdb-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup"
+        aria-expanded="false"
+        aria-label="Toggle navigation">
+        <i class="fas fa-bars""></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active" aria-current="page"
+            href="index.html">الرئيسية</a>
+
+          <a class="nav-link active" aria-current="page"
+            href="https://ketabonline.com/ar">الدروس</a>
+
+          <!-- Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+              role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+              العلماء
+            </a>
+            <!-- Dropdown menu -->
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown"
+        >
+              <li >
+                <a class="dropdown-item"
+                  href="https://www.youtube.com/channel/UCdjT0H5oWyshqX17tNCd97w">الشعراوي</a>
+              </li>
+              <li >
+                <a class="dropdown-item"
+                  href="https://www.youtube.com/c/kichk1933">كشك</a>
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li >
+                <a class="dropdown-item"
+                  href="https://www.youtube.com/c/AcademyZAD">زاد</a>
+              </li>
+            </ul>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+    <!-- Register buttons -->
+    <div class="text-center">
+      <a href="https://www.facebook.com/">
+        <button type="button" class="btn btn-primary btn-floating mx-1">
+          <i class="fab fa-facebook-f"></i>
+        </button>
+      </a>
+
+      <a
+        href="https://accounts.google.com/signin/v2/identifier?flowName=GlifWebSignIn&flowEntry=ServiceLogin">
+        <button type="button" class="btn btn-primary btn-floating mx-1">
+          <i class="fab fa-google"></i>
+        </button>
+      </a>
+      <a href="https://twitter.com/">
+        <button type="button" class="btn btn-primary btn-floating mx-1">
+          <i class="fab fa-twitter"></i>
+        </button>
+      </a>
+
+    </div>
+
+    <!-- Button trigger modal -->
+    <button
+      type="button"
+      class="btn btn-primary"
+      data-mdb-toggle="modal"
+      data-mdb-target="#exampleModal">
+      الدخول
+    </button>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">تسجيل الدخول</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-mdb-dismiss="modal"
+              aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <!-- Email input -->
+              <div class=" mb-4">
+                <label class="form-label btn btn-primary"
+                  for="form2Example1">الايميل</label>
+                <input type="email" id="form2Example1" class="form-control" />
+
+              </div>
+
+              <!-- Password input -->
+              <div class="  mb-4">
+                <label class="form-label btn btn-primary"
+                  for="form2Example2">كلمه المرور</label>
+                <input type="password" id="form2Example2"
+                  class="form-control" />
+
+              </div>
+
+              <!-- 2 column grid layout for inline styling -->
+              <div class="row mb-4">
+                <div class="col d-flex justify-content-center">
+                  <!-- Checkbox -->
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value
+                      id="form2Example34"
+                      checked />
+                    <label class="form-check-label" for="form2Example34">
+                      تذكرني </label>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <!-- Simple link -->
+                  <a href="#!">نسيت كلمه المرور?</a>
+                </div>
+              </div>
+
+              <!-- Submit button -->
+              <button type="submit" class="btn btn-primary btn-block mb-4">سجل
+                الدخول</button>
+
+              <!-- Register buttons -->
+              <div class="text-center">
+                <p>لست عضو? <a href="./signup.html">للتسجيل</a></p>
+                <p> سجل باستخدام:</p>
+                <a href="https://www.facebook.com/">
+                  <button type="button"
+                    class="btn btn-primary btn-floating mx-1">
+                    <i class="fab fa-facebook-f"></i>
+                  </button>
+                </a>
+
+                <a
+                  href="https://accounts.google.com/signin/v2/identifier?flowName=GlifWebSignIn&flowEntry=ServiceLogin">
+                  <button type="button"
+                    class="btn btn-primary btn-floating mx-1">
+                    <i class="fab fa-google"></i>
+                  </button>
+                </a>
+                <a href="https://twitter.com/">
+                  <button type="button"
+                    class="btn btn-primary btn-floating mx-1">
+                    <i class="fab fa-twitter"></i>
+                  </button>
+                </a>
+
+              </button>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary"
+            data-mdb-dismiss="modal">
+            Close
+          </button>
+
+        </div>
+
+      </div>
+
+    </nav>
+<main class="container w-responsive">
+<form >
+  <!-- 2 column grid layout with text inputs for the first and last names -->
+  <div class="row mb-4">
+    <div class="col">
+      <div class="">
+        <label class="form-label " for="form3Example1">الاسم الاول</label>
+        <input type="text" id="form3Example1" class="form-control" placeholder="First Name" />
+      </div>
+    </div>
+    <div class="col">
+      <div >
+        <label class="form-label " for="form3Example1">الاسم الاخير</label>
+        <input type="text" id="form3Example2" class="form-control" placeholder="Last Name"/>
+      </div>
+    </div>
+  </div>
+
+  <!-- Email input -->
+  <div class=" mb-4">
+    <label class="form-label " for="form3Example1" >الايميل</label>
+    <input type="email" id="form3Example3" class="form-control" placeholder="Email"/>
+  
+  </div>
+
+  <!-- Password input -->
+  <div class=" mb-4">
+    <label class="form-label " for="form3Example1" >كلمه المرور</label>
+    <input type="password" id="form3Example4" class="form-control" placeholder="Password"/>
+  
+    
+  </div>
+
+  <!-- Checkbox -->
+  <div class="form-check d-flex justify-content-center mb-4">
+
+
+    <label class="form-check-label" for="form2Example33">
+      Subscribe to our newsletter
+    </label>
+    <input
+    class="form-check-input me-2"
+    type="checkbox"
+    value=""
+    id="form2Example33"
+    checked
+  />
+  </div>
+
+  <!-- Submit button -->
+  <button type="submit" class="btn btn-primary btn-block mb-4">Sign up</button>
+
+  <!-- Register buttons -->
+  <div class="text-center">
+    <p>  سجل باستخدم:</p>
+    <button type="button" class="btn btn-primary btn-floating mx-1">
+      <i class="fab fa-facebook-f"></i>
+    </button>
+
+    <button type="button" class="btn btn-primary btn-floating mx-1">
+      <i class="fab fa-google"></i>
+    </button>
+
+    <button type="button" class="btn btn-primary btn-floating mx-1">
+      <i class="fab fa-twitter"></i>
+    </button>
+
+    </button>
+  </div>
+</form>
+</main>
+
+
+      <!-- Footer -->
+      <footer class="text-center text-white bg-info">
+        <!-- Grid container -->
+        <div class="container p-4">
+
+          <!-- Section: Social media -->
+          <section class="mb-4">
+            <!-- Facebook -->
+            <a class="btn btn-primary btn-floating m-1"
+              style="background-color: #3b5998" href="https://www.facebook.com/"
+              role="button"><i class="fab fa-facebook-f"></i></a>
+
+            <!-- Twitter -->
+            <a class="btn btn-primary btn-floating m-1"
+              style="background-color: #55acee" href="#!"
+              role="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+
+            <!-- Google -->
+            <a class="btn btn-primary btn-floating m-1"
+              style="background-color: #dd4b39"
+              href="https://accounts.google.com/signin/v2/identifier?flowName=GlifWebSignIn&flowEntry=ServiceLogin"
+              role="button"><i class="fab fa-google"></i></a>
+
+            <!-- Instagram -->
+            <a class="btn btn-primary btn-floating m-1"
+              style="background-color: #ac2bac" href="#!" role="button"><i
+                class="fab fa-instagram"></i></a>
+
+            <!-- Linkedin -->
+            <!-- <a class="btn btn-primary btn-floating m-1" style="background-color: #0082ca" href="#!" role="button"><i class="fab fa-linkedin-in"></i></a> -->
+            <!-- Github -->
+            <!-- <a class="btn btn-primary btn-floating m-1" style="background-color: #333333" href="#!" role="button"><i class="fab fa-github"></i></a> -->
+          </section>
+          <!-- Section: Social media -->
+
+          <!-- Section: Form -->
+          <section class>
+            <form action>
+              <!--Grid row-->
+              <div class="row d-flex justify-content-center">
+                <!--Grid column-->
+                <div class="col-auto">
+                  <p class="pt-2">
+                    <strong>سجل للحصول علي اخر المعلومات</strong>
+                  </p>
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-md-5 col-12">
+                  <!-- Email input -->
+                  <div class="form-outline form-white mb-4">
+                    <input style="width: 70%;" type="email" id="form5Example2"
+                      class="form" />
+                    <label class="form-label" for="form5Example2">Email</label>
+                  </div>
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-auto">
+
+                  <!-- Submit button -->
+                  <button type="submit" class="btn btn-outline-light mb-4">
+                    للاشتراك
+                  </button>
+                </div>
+                <!--Grid column-->
+              </div>
+              <!--Grid row-->
+            </form>
+          </section>
+          <!-- Section: Form -->
+
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3">
+          © 2020 Copyright:
+          <a class="text-white" href="#">hussain taha</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+      <!-- Footer -->
+<script
+type="text/javascript"
+src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"
+></script>
+</body>
+</html>
